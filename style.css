@@ -1,0 +1,42 @@
+/* Font */
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+/* Stile del testo 3D */
+#testo {
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  font-size: 7em;
+  padding-top: 70px;
+  font-family: 'Oswald', sans-serif;
+}
+
+span {
+  text-shadow: -0.05em 0 red, 0.05em 0 cyan;
+  letter-spacing: 0.08em;
+}
+
+/* Occhiali 3D */
+#occhiali {
+  background: url('http://icons.iconarchive.com/icons/ergosign/cinema/72/3D-Glasses-icon.png') no-repeat;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+/* Stile Animazione */
+#title:focus {
+  outline: none;
+}
+
+#title span {
+  vertical-align: middle;
+  line-height: 1.5em;
+  transition: font-size 2s cubic-bezier(0, 1, 0, 1);
+}
+
+#title span:hover {
+  font-size: 1.5em;
+  line-height: 1em;
+  transition: font-size 0.2s cubic-bezier(0, 0.75, 0, 1);
+}
